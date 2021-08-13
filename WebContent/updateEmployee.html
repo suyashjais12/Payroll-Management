@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update table</title>
+</head>
+	<body>
+		<label>
+			<form action="update" methode="get" >
+				
+				Table Name:<!--  <input type= name="table" required>-->
+				<select name="tab">
+					<option value=" ">none</option>
+					<option value="employee">Employee</option>
+					<option value="employee info">employee Info</option>
+					<option value="employee salary">employee Salary</option>
+				</select>
+				Column Name:
+				<select name="col">
+					<option>none</option>
+					<option value="First_Name">First_Name</option>
+					<option value="Last_Name">Last_Name</option>
+					<option value="Designetion">Designetion</option>
+					<option value="Nationality">Nationality</option>
+					<option value="Age">Age</option>
+					<option value="Ph_NO">Phone_NO</option>
+					<option value="Mail_ID">Mail_ID</option>
+					<option value="Address">Address</option>
+					<option value="Net_Salary">Net Salary</option>
+					<option value="Med_Allow">Medical Allowance</option>
+					<option value="Trav_Allow">Travel Allowance</option>
+					<option value="Stay_Allow">Stay Allowance</option>
+					<option value="DA">DA</option>
+					<option value="CCA">CCA</option>
+					<option value="TDS">TDS</option>
+					<option value="Bonus_or_Share">Bonus_or_Share</option>
+					<option value="Acc_NO">Acc_NO</option>
+				</select>
+				
+				value:<input type="text" name="data"required>
+				ID:<input type="text" name="uid" required>
+				<input type="submit" value="update">
+			</from>
+		</label>
+	</body>
+</html>

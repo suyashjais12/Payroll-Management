@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>PAYROLL</display-name>
+  <!-- hr login start -->
+  <servlet>
+  <servlet-name>hrAdminLogin</servlet-name>
+  <servlet-class>com.hr.payroll.loginHrAdmin</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+  <servlet-name>hrAdminLogin</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <!-- hr login end -->
+  <!-- employee adding start   -->
+  
+  <servlet>
+  <servlet-name>empAdd</servlet-name>
+  <servlet-class>com.hr.payroll.addEmployee</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>empAdd</servlet-name>
+  <url-pattern>/addEmp</url-pattern>
+  
+  </servlet-mapping>
+  <!-- employee adding end -->
+  <!-- employee login start -->
+   <servlet>
+  <servlet-name>empLogin</servlet-name>
+  <servlet-class>com.employee.employeeLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>empLogin</servlet-name>
+  <url-pattern>/empLoginHtml</url-pattern>
+  </servlet-mapping>
+  <!-- employee login end -->
+  <!-- showing record start -->
+  <servlet>
+  <servlet-name>empShow</servlet-name>
+  <servlet-class>com.employee.showRecord</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>empShow</servlet-name>
+  <url-pattern>/showRecord</url-pattern>
+  </servlet-mapping>
+  <!-- showing record end -->
+  <!-- updating a row start -->
+  <servlet>
+  <servlet-name>empUpdate</servlet-name>
+  <servlet-class>com.hr.payroll.updateEmployee</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>empUpdate</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <!-- updating a row end -->
+  <!-- For deleting a row start -->
+   <servlet>
+  <servlet-name>empDelete</servlet-name>
+  <servlet-class>com.hr.payroll.deleteEmployee</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>empDelete</servlet-name>
+  <url-pattern>/deleteEmployee</url-pattern>
+  </servlet-mapping>
+  <!-- for deleting a row end -->
+  <!-- Updating emp_login table's password field Start-->
+  <servlet>
+  	<servlet-name>pUpdate</servlet-name>
+  	<servlet-class>com.employee.employeeLoginUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>pUpdate</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <!-- updating  emp_login table's password field end-->
+</web-app>
